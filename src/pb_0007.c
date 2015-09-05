@@ -14,17 +14,14 @@ bool is_prime(long num) {
 }
 
 long pb_0007(int nth) {
-	int cnt = 0;
-	int num = 2;
+	int cnt = 1;
+	int num = 1;
 
-	while (true) {
+	while (cnt < nth) {
+		num+=2;
+
 		if (is_prime(num))
 			cnt++;
-
-		if (cnt == nth)
-			break;
-
-		num++;
 	}
 
 	return num;

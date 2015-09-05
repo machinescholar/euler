@@ -40,13 +40,3 @@ long pb_0005() {
 	return result;
 }
 
-int gcd(int a, int b) {
-	if (!b)
-		return a;
-
-	return gcd(b, a % b);
-}
-
-long lcm(int a,int b) {
-	return (long) a * b / gcd(a,b);
-}
