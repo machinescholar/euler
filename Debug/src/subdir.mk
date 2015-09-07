@@ -5,6 +5,7 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../src/commath.c \
+../src/dynamic_array.c \
 ../src/euler.c \
 ../src/list.c \
 ../src/pb_0001.c \
@@ -18,10 +19,13 @@ C_SRCS += \
 ../src/pb_0009.c \
 ../src/pb_0010.c \
 ../src/pb_0011.c \
-../src/pb_0012.c 
+../src/pb_0012.c \
+../src/pb_0013.c \
+../src/pb_0014.c 
 
 OBJS += \
 ./src/commath.o \
+./src/dynamic_array.o \
 ./src/euler.o \
 ./src/list.o \
 ./src/pb_0001.o \
@@ -35,10 +39,13 @@ OBJS += \
 ./src/pb_0009.o \
 ./src/pb_0010.o \
 ./src/pb_0011.o \
-./src/pb_0012.o 
+./src/pb_0012.o \
+./src/pb_0013.o \
+./src/pb_0014.o 
 
 C_DEPS += \
 ./src/commath.d \
+./src/dynamic_array.d \
 ./src/euler.d \
 ./src/list.d \
 ./src/pb_0001.d \
@@ -52,7 +59,9 @@ C_DEPS += \
 ./src/pb_0009.d \
 ./src/pb_0010.d \
 ./src/pb_0011.d \
-./src/pb_0012.d 
+./src/pb_0012.d \
+./src/pb_0013.d \
+./src/pb_0014.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

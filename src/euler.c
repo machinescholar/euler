@@ -22,8 +22,11 @@
 #include "pb_0010.h"
 #include "pb_0011.h"
 #include "pb_0012.h"
+#include "pb_0013.h"
 
 int main(void) {
+	char* tmp_str;
+
 	printf("Problem 1 answer is %d\n",pb_0001(1000));
 	printf("Problem 2 answer is %d\n",pb_0002(4000000));
 	printf("Problem 3 answer is %d\n",pb_0003(600851475143));
@@ -36,5 +39,10 @@ int main(void) {
 	printf("Problem 10 answer is %ld\n",pb_0010());
 	printf("Problem 11 answer is %ld\n",pb_0011());
 	printf("Problem 12 answer is %ld\n",pb_0012());
+	tmp_str= pb_0013();
+	printf("Problem 13 answer is %s\n",tmp_str);
+	free(tmp_str);
+	printf("Problem 14 answer is %ld\n",pb_0014());
+
 	return EXIT_SUCCESS;
 }
