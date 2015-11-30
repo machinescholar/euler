@@ -23,9 +23,16 @@
 #include "pb_0011.h"
 #include "pb_0012.h"
 #include "pb_0013.h"
+#include "pb_0014.h"
+#include "pb_0015.h"
+#include "pb_0016.h"
+#include "pb_0017.h"
 
 int main(void) {
 	char* tmp_str;
+
+	char str[] = "        ";
+	printf("%d\n",strlen(str));
 
 	printf("Problem 1 answer is %d\n",pb_0001(1000));
 	printf("Problem 2 answer is %d\n",pb_0002(4000000));
@@ -43,6 +50,9 @@ int main(void) {
 	printf("Problem 13 answer is %s\n",tmp_str);
 	free(tmp_str);
 	printf("Problem 14 answer is %ld\n",pb_0014());
-
+	printf("Problem 15 answer is %ld\n",pb_0015());
+	printf("Problem 16 answer is %ld\n",pb_0016());
+	printf("Problem 17 answer is %ld\n",pb_0017());
+	printf("Problem 18 answer is %d\n",pb_0018());
 	return EXIT_SUCCESS;
 }
